@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Blood Donation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <!--materializecss css file -->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+    <!-- materializecss js library-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <!-- material icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <nav class="nav-extended light-blue darken-2 navbar-fixed">
+
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo"><i class="material-icons white-text">verified_user</i>Blood Bank</a>
+        </div>
+        <div class="nav-content">
+
+            <ul class="tabs tabs-transparent">
+                <li class="tab">
+                    <a class="active" href="#login">LogIn</a>
+                </li>
+                <li class="tab">
+                    <a href="#signup">Register</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="login" class="col s12 ">
+        <div class="form-wrapper">
+            <div class="row">
+                <br>
+                <br>
+                <form action="" class="col s12">
+                    <div class="row">
+
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">mail</i>
+                            <input id="email" type="email" class="validate" required>
+                            <label for="email">Email</label>
+                            <span class="helper-text" data-error="Invalid Email Format" data-success="">Enter your Email</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">lock</i>
+                            <input id="password" type="password" class="validate" required>
+                            <label for="password">Password</label>
+                            <span class="helper-text" data-error="Incorrect Password" data-success="">Enter your Password</span>
+                        </div>
+                    </div>
+                    <br/>
+                    <br/>
+                    <div class="row center">
+                    <button class="btn waves-effect waves-light" type="submit" name="action">LOGIN
+                        <i class="material-icons right white-text">send</i>
+                    </button>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+    <div id="signup" class="col s12">
+        <div class="nav2 light-blue darken-1">
+
+            <ul class="tabs tabs-transparent">
+                <li class="tab">
+                    <a href="#donators">For Donators</a>
+                </li>
+                <li class="tab">
+                    <a class="active" href="#hospital">For Hospitals</a>
+                </li>
+            </ul>
+        </div>
+        <div id="donators" class="form-wrapper1">
+            <div class="row">
+                <form action="" class="col s12">
+                    <div class="row">
+
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="first_name" type="text" class="validate" required>
+                            <label for="first_name">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Last Name</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">phone</i>
+                            <input id="mobile" type="tel" class="validate" required>
+                            <label for="mobile">Telephone</label>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">mail</i>
+                            <input id="mail0" type="email" class="validate" required>
+                            <label for="mail0">Email</label>
+                            <span class="helper-text" data-error="Please enter email in correct format" data-success=""></span>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">lock</i>
+                            <input id="password0" type="password" class="validate" required>
+                            <label for="password0">Password</label>
+                            <span class="helper-text" data-error="Your password is wrong" data-success="">Enter your password</span>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">add_location</i>
+                            <input id="address" type="tel" class="validate">
+                            <label for="address">Address</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">opacity</i>
+                            <input id="blood" type="tel" class="validate">
+                            <label for="blood">Blood type</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">date_range</i>
+                            <input id="date" type="text" class="datepicker">
+                            <label for="date_range">Date last donated</label>
+                        </div>
+                    <div class="row center">
+                    <button class="btn waves-effect waves-light" type="submit" name="action">REGISTER
+                        <i class="material-icons right white-text">send</i>
+                    </button>
+                    </div>
+
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+        <div id="hospital" class="form-wrapper1">
+            <div class="row">
+                <form action="" class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">local_hospital</i>
+                            <input id="hospital" type="text" class="validate" required>
+                            <label for="hospital">Name of the Hospital</label>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">add_location</i>
+                            <input id="address0" type="text" class="validate">
+                            <label for="address0">Address</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">phone</i>
+                            <input id="mobile0" type="tel" class="validate" required>
+                            <label for="mobile0">Telephone</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">mail</i>
+                            <input id="mail1" type="email" class="validate" required>
+                            <label for="mail1">Email</label>
+                            <span class="helper-text" data-error="Please enter email in correct format" data-success=""></span>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">lock</i>
+                            <input id="password1" type="password" class="validate" required>
+                            <label for="password1">Password</label>
+                            <span class="helper-text" data-error="Your password is wrong" data-success="">Enter your password</span>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">opacity</i>
+                            <input id="blood0" type="text" class="validate">
+                            <label for="blood0">Average Blood Required/Month</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">person</i>
+                            <input id="incharge" type="text" class="validate">
+                            <label for="incharge">Person Incharge</label>
+                        </div>
+                                            <div class="row center">
+                    <button class="btn waves-effect waves-light" type="submit" name="action">REGISTER
+                        <i class="material-icons right white-text">send</i>
+                    </button>
+                    </div>
+
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+<script src="https://www.gstatic.com/firebasejs/5.7.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDBf8RmYYIJTL1h9WpGI3ekcxwUd1Ky9eQ",
+    authDomain: "blood-bank-164e5.firebaseapp.com",
+    databaseURL: "https://blood-bank-164e5.firebaseio.com",
+    projectId: "blood-bank-164e5",
+    storageBucket: "blood-bank-164e5.appspot.com",
+    messagingSenderId: "594228053849"
+  };
+  firebase.initializeApp(config);
+</script>
+
+
+
+    <script>
+        M.AutoInit();
+    </script>
+
+</body>
+
+</html>
